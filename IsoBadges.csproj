@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>IsoBadges</AssemblyName>
+    <AssemblyTitle>IsoBadges</AssemblyTitle>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="com.github.PEAKModding.PEAKLib.Core">
+      <HintPath>C:\Users\Isotope_\AppData\Roaming\com.kesomannen.gale\peak\profiles\Default\BepInEx\plugins\PEAKModding-PEAKLib_Core\com.github.PEAKModding.PEAKLib.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="com.github.PEAKModding.PEAKLib.UI">
+      <HintPath>C:\Users\Isotope_\AppData\Roaming\com.kesomannen.gale\peak\profiles\Default\BepInEx\plugins\PEAKModding-PEAKLib_UI\com.github.PEAKModding.PEAKLib.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MoreBadges">
+      <HintPath>C:\Users\Isotope_\AppData\Roaming\com.kesomannen.gale\peak\profiles\Default\BepInEx\plugins\Snosz-MoreBadges\MoreBadges.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>
