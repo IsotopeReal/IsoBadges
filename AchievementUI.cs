@@ -23,12 +23,8 @@ namespace IsoBadges
         {
             this._badge = badge;
             UpdateText(currentProgress);
-
             if (badge.icon != null)
-            {
                 achievementIcon.sprite = Sprite.Create(badge.icon, new Rect(0, 0, badge.icon.width, badge.icon.height), new Vector2(0.5f, 0.5f));
-            }
-
             StartAnimation();
         }
 
@@ -42,7 +38,17 @@ namespace IsoBadges
         {
             bool isComplete = newProgress >= _badge.progressRequired;
 
-            // Handle text based on the UI style from the config
+            string progressString;
+            if (ConfigManager.ProgressDisplay.Value == ProgressDisplayStyle.Percentage)
+            {
+                int percentage = Mathf.Min(100, (int)(((float)newProgress / _badge.progressRequired) * 100));
+                progressString = $"{percentage}%";
+            }
+            else // Ratio
+            {
+                progressString = $"{newProgress}/{_badge.progressRequired}";
+            }
+
             if (ConfigManager.UIStyle.Value == AchievementUIStyle.Compact)
             {
                 if (achievementDescription != null)
@@ -50,12 +56,12 @@ namespace IsoBadges
                     if (isComplete)
                     {
                         achievementDescription.text = "Unlocked";
-                        achievementDescription.color = new Color(1f, 0.84f, 0f); // Gold
+                        achievementDescription.color = ConfigManager.UnlockedTextColor.Value;
                     }
                     else
                     {
-                        achievementDescription.text = $"{newProgress}/{_badge.progressRequired}";
-                        achievementDescription.color = Color.white;
+                        achievementDescription.text = progressString;
+                        achievementDescription.color = ConfigManager.Compact_ProgressColor.Value;
                     }
                 }
             }
@@ -64,20 +70,19 @@ namespace IsoBadges
                 if (achievementTitle != null)
                 {
                     achievementTitle.text = _badge.displayName;
-                    achievementTitle.color = Color.white;
+                    achievementTitle.color = ConfigManager.Default_TitleColor.Value;
                 }
-
                 if (achievementDescription != null)
                 {
                     if (isComplete)
                     {
                         achievementDescription.text = "Achievement Unlocked";
-                        achievementDescription.color = new Color(1f, 0.84f, 0f); // Gold
+                        achievementDescription.color = ConfigManager.UnlockedTextColor.Value;
                     }
                     else
                     {
-                        achievementDescription.text = $"{_badge.description} ({newProgress}/{_badge.progressRequired})";
-                        achievementDescription.color = Color.gray;
+                        achievementDescription.text = $"{_badge.description} ({progressString})";
+                        achievementDescription.color = ConfigManager.Default_DescriptionColor.Value;
                     }
                 }
             }
@@ -215,7 +220,11 @@ namespace IsoBadges
             GameObject panelGO = new GameObject("PopupPanel", typeof(RectTransform));
             panelGO.transform.SetParent(canvas.transform, false);
             Image panelImage = panelGO.AddComponent<Image>();
-            panelImage.color = new Color(0.1f, 0.1f, 0.15f, 0.95f);
+
+            Color baseColor = ConfigManager.PanelBaseColor.Value;
+            float alpha = Mathf.Clamp01(ConfigManager.PanelTransparency.Value);
+            panelImage.color = new Color(baseColor.r, baseColor.g, baseColor.b, alpha);
+
             RectTransform panelRect = panelGO.GetComponent<RectTransform>();
             panelRect.anchorMin = new Vector2(1, 1);
             panelRect.anchorMax = new Vector2(1, 1);
