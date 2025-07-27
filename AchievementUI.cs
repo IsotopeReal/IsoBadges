@@ -8,12 +8,6 @@ using BepInEx.Configuration;
 
 namespace IsoBadges
 {
-    public enum AchievementUIStyle
-    {
-        Default,
-        Compact
-    }
-
     public class AchievementPopupUGUI : MonoBehaviour
     {
         public TextMeshProUGUI achievementTitle;
@@ -241,66 +235,69 @@ namespace IsoBadges
 
             if (ConfigManager.UIStyle.Value == AchievementUIStyle.Compact)
             {
-                panelRect.sizeDelta = new Vector2(90, 90);
+                panelRect.sizeDelta = new Vector2(ConfigManager.Compact_PanelWidth.Value, ConfigManager.Compact_PanelHeight.Value);
+
                 iconRect.anchorMin = new Vector2(0.5f, 1);
                 iconRect.anchorMax = new Vector2(0.5f, 1);
                 iconRect.pivot = new Vector2(0.5f, 1);
-                iconRect.sizeDelta = new Vector2(60, 60);
+                iconRect.sizeDelta = new Vector2(ConfigManager.Compact_IconSize.Value, ConfigManager.Compact_IconSize.Value);
                 iconRect.anchoredPosition = new Vector2(0, -5);
 
                 GameObject progressGO = new GameObject("ProgressText", typeof(RectTransform));
                 progressGO.transform.SetParent(panelRect.transform, false);
                 TextMeshProUGUI progressText = progressGO.AddComponent<TextMeshProUGUI>();
                 progressText.font = GameFont;
-                progressText.fontSize = 14;
-                //progressText.fontStyle = FontStyles.Bold;
+                progressText.fontSize = ConfigManager.Compact_ProgressFontSize.Value;
                 progressText.alignment = TextAlignmentOptions.Center;
                 RectTransform progressRect = progressGO.GetComponent<RectTransform>();
                 progressRect.anchorMin = new Vector2(0.5f, 0);
                 progressRect.anchorMax = new Vector2(0.5f, 0);
                 progressRect.pivot = new Vector2(0.5f, 0);
-                progressRect.sizeDelta = new Vector2(80, 20);
+                progressRect.sizeDelta = new Vector2(panelRect.sizeDelta.x - 10, 20);
                 progressRect.anchoredPosition = new Vector2(0, 5);
 
                 controller.achievementDescription = progressText;
             }
             else // Default Style
             {
-                panelRect.sizeDelta = new Vector2(260, 70);
+                panelRect.sizeDelta = new Vector2(ConfigManager.Default_PanelWidth.Value, ConfigManager.Default_PanelHeight.Value);
+
+                float padding = 10f;
+                float iconSize = ConfigManager.Default_IconSize.Value;
 
                 iconRect.anchorMin = new Vector2(0, 0.5f);
                 iconRect.anchorMax = new Vector2(0, 0.5f);
                 iconRect.pivot = new Vector2(0, 0.5f);
-                iconRect.sizeDelta = new Vector2(50, 50);
-                iconRect.anchoredPosition = new Vector2(10, 0);
+                iconRect.sizeDelta = new Vector2(iconSize, iconSize);
+                iconRect.anchoredPosition = new Vector2(padding, 0);
 
                 GameObject titleGO = new GameObject("Title", typeof(RectTransform));
                 titleGO.transform.SetParent(panelRect.transform, false);
                 TextMeshProUGUI titleText = titleGO.AddComponent<TextMeshProUGUI>();
                 titleText.font = GameFont;
-                titleText.fontSize = 16;
-                //titleText.fontStyle = FontStyles.Bold;
+                titleText.fontSize = ConfigManager.Default_TitleFontSize.Value;
                 titleText.color = Color.white;
                 titleText.alignment = TextAlignmentOptions.Left;
                 RectTransform titleRect = titleGO.GetComponent<RectTransform>();
+                float titleHeight = 25f;
                 titleRect.anchorMin = new Vector2(0, 1);
                 titleRect.anchorMax = new Vector2(1, 1);
                 titleRect.pivot = new Vector2(0, 1);
-                titleRect.sizeDelta = new Vector2(-70, 25);
-                titleRect.anchoredPosition = new Vector2(68, -8);
+                titleRect.anchoredPosition = new Vector2(iconSize + padding * 2, -padding);
+                titleRect.sizeDelta = new Vector2(-(iconSize + padding * 3), titleHeight);
 
                 GameObject descGO = new GameObject("Description", typeof(RectTransform));
                 descGO.transform.SetParent(panelRect.transform, false);
                 TextMeshProUGUI descText = descGO.AddComponent<TextMeshProUGUI>();
                 descText.font = GameFont;
-                descText.fontSize = 14;
+                descText.fontSize = ConfigManager.Default_DescriptionFontSize.Value;
                 descText.alignment = TextAlignmentOptions.TopLeft;
                 RectTransform descRect = descGO.GetComponent<RectTransform>();
-                descRect.anchorMin = new Vector2(0, 0);
-                descRect.anchorMax = new Vector2(1, 0);
-                descRect.pivot = new Vector2(0, 0);
-                descRect.sizeDelta = new Vector2(-70, 35);
-                descRect.anchoredPosition = new Vector2(68, 2);
+                descRect.anchorMin = new Vector2(0, 1);
+                descRect.anchorMax = new Vector2(1, 1);
+                descRect.pivot = new Vector2(0, 1);
+                descRect.anchoredPosition = new Vector2(iconSize + padding * 2, -padding - titleHeight);
+                descRect.sizeDelta = new Vector2(-(iconSize + padding * 3), panelRect.sizeDelta.y - titleHeight - (padding * 2));
 
                 controller.achievementTitle = titleText;
                 controller.achievementDescription = descText;
