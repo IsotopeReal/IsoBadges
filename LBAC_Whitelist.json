@@ -1,0 +1,144 @@
+{
+  "version": "2025-08-28",
+  "allowed_dll_hashes": [
+    "05d5a58c532dcd7e95bcc0835243b133c56954b11847f818c105e5b842e4ade3",
+    "114323a8ac29f4bc6a8548f38c711b96277591291ee38338e839a4601c55c9cb",
+    "174db44a067f58561510af746f3caeb032037762c57a31c8d9ee32db25174984",
+    "1a21cc03424fc82c3dd1346905d16494536b9595ae4162228d99fb7c285c1031",
+    "1deba7813e834543c201260f895dfbfe38f58ef8081ac313bb335995d54b13fa",
+    "22dc3986d6ee0495b468bbb3bce606f953a3c894d11eb33dedddf230df1d82f1",
+    "26b42e2c8ffe5405f500870ae4b5c8221d8cc5f88ee230f50a8f373a0a426790",
+    "3512c6e2560dc29facfbb175211f6f01ee5158cfd3e06d77ab500f2813d4c533",
+    "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c",
+    "49718bc056fa5402efa96c5ad78ce09c72d519834366b429a556c1c579c89b96",
+    "4c4a3653289be0c38c1865b8efefa9aec871a50480aaa01b84b8608fe25b33d7",
+    "54ac539fb5ddc8b44c0e9acd0fcb7324f89d1a072edf8ebc1b06dd691e3d3927",
+    "553f73c1beba0f0401612820e2c5ba44bed2e1ec4db96596daea8b4766477070",
+    "5896d1898f616701fff18f3b2c71e6b844d2390ef9f41e1c5fccce8cb27c698e",
+    "6be018b9d6765d3081feb637cca0f17f92143478cddde0d79e6b5df7f3dc360c",
+    "7019b359b8c5f04fc2fbe87c4183dc075a95e9cb2d1487eab4968c7464cf447f",
+    "71b67e6b20ce918abb182aa284ebc4032415b63d3203aff43781e29294e8b0dc",
+    "730c2b3e923e1e0f22c58648401f262c7bdf516846eb39c0fea3688ecc2a7941",
+    "73e17f319db2b7798303bedfb0d96f28db1920d9a544f31ac9b0b8e4e885d743",
+    "74036ff4ce1ec9b016d1a871b8af55940a692c34ff678f743febc479b59c74b7",
+    "79b2c4cef86328a482f4edc9a5973895f19d3f59566d4b57b0080bdf1872e802",
+    "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6",
+    "7f910b0e59bd27033de6eb6fc7d55d0243dcfb7032f04275df8c36a80cd257e7",
+    "8ae9270bd08fffa8a1c56448a3b2a4f36d4d536a281d5e008f1e41caf8c106b2",
+    "8bd1d6021f012c13ddba98649c2314f0d47f121cfd1fb20526b20393cf12b54a",
+    "8db821d2b3820d846b2f2976b0bab604b81dcb0b5b0a9bf010dbe02f05260617",
+    "9a136d60e66180b76f9424dd05e9c9bf58859f8f4c9bcf5f09eedd0ba99c2bbb",
+    "9ab1376bb0d4ca87b6b63d493d3ffd5f025e94ac401d47243f0e46fd771909bd",
+    "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9",
+    "9fe4a88d4f949fcdb3222a05c1902fec94f99655501e5eb60408543492ce9884",
+    "a06d0e7556c265dd0905c053937ae4f50e37ecf0d79c14fffb3b7fb61658e931",
+    "a6109d0c9bc2f2d7b0743f215fd4f509a59025483ea64523a668195c74e70dfa",
+    "b0557300270d412d1c7be52dbcf3c00651cf26acc3010983bdcec0c77ae11422",
+    "bf697fbb1457dbcbbbb37b2390f6be51ec307fa0e74e10d2f5416ba1c4e155e0",
+    "c5f3c4f55e80f463b68ae61f63f01cbec2d1fa03153c6d16eeed8233708e6a3f",
+    "cbbf20bb40ef0902bf0a086ff2d2b4f0a8ca9e0ed596dfcfdc331063fdf8097f",
+    "cc7a1093d6ead17f75545c8d8cc455fdafcb1aca48d9b887735cc21095833bb8",
+    "cdabbb30267bf22f8ceca1b8f4b7a5726e2f5c6316ea9f21395d10032f29625f",
+    "ce61c459d65287e7b9221e07857058972445cde81387d49167d383bcb225c91c",
+    "ce70d236d22ca92c7fc6223a2d363ff2628d42b237474d1238cc7a0c984dd019",
+    "dcd907d98ab063f31559ee356349bc5d33ccc6ae1402a6c657b7ea0c2eeaaad7",
+    "ec1e01491e74161ef87af08f8ee7361703d66ff3f3eeb859d1efc48ce2eb6d22",
+    "eece00cde9b70f6d7b43ff89d399d22f6fa1d95f5ca8630254d614af258aa582",
+    "f41ebe96561fa52a25a9d7275b5ab7f541e10b405d64f63606d2b8a5e0493677",
+    "f90340aee360320a1be9e34c8e3ff4099ec621618def782ad872af8321a07c36"
+  ]
+  ,"hash_labels": {
+    "05d5a58c532dcd7e95bcc0835243b133c56954b11847f818c105e5b842e4ade3":
+    "BepInEx.Harmony.dll  |  Assembly=BepInEx.Harmony  |  Version=2.0.0.0",
+    "114323a8ac29f4bc6a8548f38c711b96277591291ee38338e839a4601c55c9cb":
+    "EasyBackpack.dll  |  Assembly=EasyBackpack  |  Version=1.1.1.0",
+    "174db44a067f58561510af746f3caeb032037762c57a31c8d9ee32db25174984":
+    "Mono.Cecil.Pdb.dll  |  Assembly=Mono.Cecil.Pdb  |  Version=0.10.4.0",
+    "1a21cc03424fc82c3dd1346905d16494536b9595ae4162228d99fb7c285c1031":
+    "0Harmony.dll  |  Assembly=0Harmony  |  Version=2.9.0.0",
+    "1deba7813e834543c201260f895dfbfe38f58ef8081ac313bb335995d54b13fa":
+    "MMHOOK_Assembly-CSharp.dll  |  Assembly=MMHOOK_Assembly-CSharp  |  Version=0.0.0.0",
+    "22dc3986d6ee0495b468bbb3bce606f953a3c894d11eb33dedddf230df1d82f1":
+    "PhotonCustomPropsUtils.dll  |  Assembly=PhotonCustomPropsUtils  |  Version=1.1.0.0",
+    "26b42e2c8ffe5405f500870ae4b5c8221d8cc5f88ee230f50a8f373a0a426790":
+    "PassportPagination.dll  |  Assembly=PassportPagination  |  Version=0.1.0.0",
+    "3512c6e2560dc29facfbb175211f6f01ee5158cfd3e06d77ab500f2813d4c533":
+    "Hamunii.DetourContext.Dispose_Fix.dll  |  Assembly=Hamunii.DetourContext.Dispose_Fix  |  Version=1.0.5.0",
+    "40e49bb314391cd7bddc2644f8553eeba92c194b940836b103df16955c464e0c":
+    "MonoMod.RuntimeDetour.dll  |  Assembly=MonoMod.RuntimeDetour  |  Version=22.1.29.1",
+    "49718bc056fa5402efa96c5ad78ce09c72d519834366b429a556c1c579c89b96":
+    "SettingsExtender.dll  |  Assembly=SettingsExtender  |  Version=0.1.6.0",
+    "4c4a3653289be0c38c1865b8efefa9aec871a50480aaa01b84b8608fe25b33d7":
+    "tony4twentys-Catch Players.dll  |  Assembly=Catch Players  |  Version=1.0.0.0",
+    "54ac539fb5ddc8b44c0e9acd0fcb7324f89d1a072edf8ebc1b06dd691e3d3927":
+    "Mono.Cecil.Rocks.dll  |  Assembly=Mono.Cecil.Rocks  |  Version=0.10.4.0",
+    "553f73c1beba0f0401612820e2c5ba44bed2e1ec4db96596daea8b4766477070":
+    "0Harmony20.dll  |  Assembly=0Harmony20  |  Version=2.0.0.0",
+    "5896d1898f616701fff18f3b2c71e6b844d2390ef9f41e1c5fccce8cb27c698e":
+    "Mono.Cecil.Mdb.dll  |  Assembly=Mono.Cecil.Mdb  |  Version=0.10.4.0",
+    "6be018b9d6765d3081feb637cca0f17f92143478cddde0d79e6b5df7f3dc360c":
+    "Piggyback.dll  |  Assembly=nakazora.peak.piggyback  |  Version=1.4.1.0",
+    "7019b359b8c5f04fc2fbe87c4183dc075a95e9cb2d1487eab4968c7464cf447f":
+    "com.github.MonoDetour.Bindings.Reorg.dll  |  Assembly=com.github.MonoDetour.Bindings.Reorg  |  Version=0.6.14.0",
+    "71b67e6b20ce918abb182aa284ebc4032415b63d3203aff43781e29294e8b0dc":
+    "PEAKER.dll  |  Assembly=PEAKER  |  Version=0.2.5.0",
+    "730c2b3e923e1e0f22c58648401f262c7bdf516846eb39c0fea3688ecc2a7941":
+    "com.github.PEAKModding.PEAKLib.UI.dll  |  Assembly=com.github.PEAKModding.PEAKLib.UI  |  Version=1.5.0.0",
+    "73e17f319db2b7798303bedfb0d96f28db1920d9a544f31ac9b0b8e4e885d743":
+    "com.github.PEAKModding.PEAKLib.ModConfig.dll  |  Assembly=com.github.PEAKModding.PEAKLib.ModConfig  |  Version=1.5.0.0",
+    "74036ff4ce1ec9b016d1a871b8af55940a692c34ff678f743febc479b59c74b7":
+    "PEAKLobbyBrowser.dll  |  Assembly=PEAKLobbyBrowser  |  Version=0.1.0.0",
+    "79b2c4cef86328a482f4edc9a5973895f19d3f59566d4b57b0080bdf1872e802":
+    "MonoMod.RuntimeDetour.HookGen.dll  |  Assembly=MonoMod.RuntimeDetour.HookGen  |  Version=21.8.5.1",
+    "7ae470288fff4a402899c254d0a76cefef55877f5c54f96e83c797cc5bb6e2f6":
+    "Mono.Cecil.dll  |  Assembly=Mono.Cecil  |  Version=0.10.4.0",
+    "7f910b0e59bd27033de6eb6fc7d55d0243dcfb7032f04275df8c36a80cd257e7":
+    "com.github.PEAKModding.PEAKLib.Stats.dll  |  Assembly=com.github.PEAKModding.PEAKLib.Stats  |  Version=1.2.0.0",
+    "8ae9270bd08fffa8a1c56448a3b2a4f36d4d536a281d5e008f1e41caf8c106b2":
+    "PeakTextChat.dll  |  Assembly=PeakTextChat  |  Version=1.3.0.0",
+    "8bd1d6021f012c13ddba98649c2314f0d47f121cfd1fb20526b20393cf12b54a":
+    "onlystar.sPEAKer.dll  |  Assembly=onlystar.sPEAKer  |  Version=1.8.4.0",
+    "8db821d2b3820d846b2f2976b0bab604b81dcb0b5b0a9bf010dbe02f05260617":
+    "com.CTNOriginals.peak.PEAKFastStartup.dll  |  Assembly=com.CTNOriginals.peak.PEAKFastStartup  |  Version=1.1.2.0",
+    "9a136d60e66180b76f9424dd05e9c9bf58859f8f4c9bcf5f09eedd0ba99c2bbb":
+    "com.github.MonoDetour.dll  |  Assembly=com.github.MonoDetour  |  Version=0.6.14.0",
+    "9ab1376bb0d4ca87b6b63d493d3ffd5f025e94ac401d47243f0e46fd771909bd":
+    "BepInEx.Preloader.dll  |  Assembly=BepInEx.Preloader  |  Version=5.4.23.3",
+    "9d1495f147ac93c4f81f84538c1a326e8f8a6aefc78d6289d798f3ce1162c5e9":
+    "MonoMod.Utils.dll  |  Assembly=MonoMod.Utils  |  Version=22.1.29.1",
+    "9fe4a88d4f949fcdb3222a05c1902fec94f99655501e5eb60408543492ce9884":
+    "BepInEx.dll  |  Assembly=BepInEx  |  Version=5.4.23.3",
+    "a06d0e7556c265dd0905c053937ae4f50e37ecf0d79c14fffb3b7fb61658e931":
+    "com.github.MonoDetour.Reflection.dll  |  Assembly=com.github.MonoDetour.Reflection  |  Version=0.6.14.0",
+    "a6109d0c9bc2f2d7b0743f215fd4f509a59025483ea64523a668195c74e70dfa":
+    "SummitRosterForked.dll  |  Assembly=SummitRosterForked  |  Version=0.1.0.0",
+    "b0557300270d412d1c7be52dbcf3c00651cf26acc3010983bdcec0c77ae11422":
+    "BepInEx.MonoMod.AutoHookGenPatcher.dll  |  Assembly=BepInEx.MonoMod.AutoHookGenPatcher  |  Version=1.0.7.0",
+    "bf697fbb1457dbcbbbb37b2390f6be51ec307fa0e74e10d2f5416ba1c4e155e0":
+    "com.github.PEAKModding.PEAKLib.Core.dll  |  Assembly=com.github.PEAKModding.PEAKLib.Core  |  Version=1.5.1.0",
+    "c5f3c4f55e80f463b68ae61f63f01cbec2d1fa03153c6d16eeed8233708e6a3f":
+    "HarmonyXInterop.dll  |  Assembly=HarmonyXInterop  |  Version=1.0.0.0",
+    "cbbf20bb40ef0902bf0a086ff2d2b4f0a8ca9e0ed596dfcfdc331063fdf8097f":
+    "PEAKInvitation.dll  |  Assembly=PEAKInvitation  |  Version=0.1.0.0",
+    "cc7a1093d6ead17f75545c8d8cc455fdafcb1aca48d9b887735cc21095833bb8":
+    "MonoMod.dll  |  Assembly=MonoMod  |  Version=21.8.5.1",
+    "cdabbb30267bf22f8ceca1b8f4b7a5726e2f5c6316ea9f21395d10032f29625f":
+    "PEAKERRpcInfo.dll  |  Assembly=PEAKERRpcInfo  |  Version=1.0.0.0",
+    "ce61c459d65287e7b9221e07857058972445cde81387d49167d383bcb225c91c":
+    "com.github.Elteeb.DanceTillYouDrop.dll  |  Assembly=com.github.Elteeb.DanceTillYouDrop  |  Version=0.2.0.0",
+    "ce70d236d22ca92c7fc6223a2d363ff2628d42b237474d1238cc7a0c984dd019":
+    "PeakStance.dll  |  Assembly=PeakStance  |  Version=0.2.2.0",
+    "dcd907d98ab063f31559ee356349bc5d33ccc6ae1402a6c657b7ea0c2eeaaad7":
+    "MicIndicator.dll  |  Assembly=MicIndicator  |  Version=1.0.1.0",
+    "ec1e01491e74161ef87af08f8ee7361703d66ff3f3eeb859d1efc48ce2eb6d22":
+    "PEAKUnlimited.dll  |  Assembly=PEAKUnlimited  |  Version=0.1.0.0",
+    "eece00cde9b70f6d7b43ff89d399d22f6fa1d95f5ca8630254d614af258aa582":
+    "com.github.PEAKModding.SoftDependencyFix.dll  |  Assembly=com.github.PEAKModding.SoftDependencyFix  |  Version=1.0.0.0",
+    "f41ebe96561fa52a25a9d7275b5ab7f541e10b405d64f63606d2b8a5e0493677":
+    "0.com.github.MonoDetour.BepInEx.5.dll  |  Assembly=0.com.github.MonoDetour.BepInEx.5  |  Version=0.6.14.0",
+    "f90340aee360320a1be9e34c8e3ff4099ec621618def782ad872af8321a07c36":
+    "com.github.PEAKModding.PEAKLib.Items.dll  |  Assembly=com.github.PEAKModding.PEAKLib.Items  |  Version=1.4.2.0"
+  }
+,
+  "generated_at_utc": "2025-08-28T21:33:14.5181198Z"
+}
